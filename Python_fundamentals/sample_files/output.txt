@@ -1,0 +1,3 @@
+Hello from Python file I/O!
+Second line.
+Appended line.

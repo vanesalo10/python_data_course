@@ -1,0 +1,36 @@
+{
+  "project": "file-io-demo",
+  "version": 1,
+  "students": [
+    {
+      "id": 1,
+      "name": "Ana",
+      "passed": true,
+      "grade": 4.5
+    },
+    {
+      "id": 2,
+      "name": "Luis",
+      "passed": true,
+      "grade": 3.9
+    },
+    {
+      "id": 3,
+      "name": "Sofía",
+      "passed": true,
+      "grade": 4.2
+    },
+    {
+      "id": 4,
+      "name": "Karla",
+      "passed": true,
+      "grade": 4.8
+    },
+    {
+      "id": 5,
+      "name": "Marcos",
+      "passed": false,
+      "grade": 3.7
+    }
+  ]
+}

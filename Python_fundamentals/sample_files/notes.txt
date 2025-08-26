@@ -1,0 +1,4 @@
+This is a plain text file.
+It has multiple lines.
+We will read it line by line and count words.
+¡Incluye caracteres con acentos como: corazón! 😀

@@ -1,0 +1,8 @@
+app:
+  name: file-io-demo
+  debug: true
+database:
+  host: localhost
+  port: 5432
+  user: admin
+  password: secret
