@@ -1,0 +1,11 @@
+listing_id,city,neighborhood,property_type,price,size_sqft,bedrooms,bathrooms,listing_date,listing_title,energy_rating,furnished
+1001,Bogota,Downtown,Apartment,120000,850,2,2,2025-01-10, Cozy Apartment ,B,yes
+1002,Bogota,North-End,House,245000,1600,3,3,2025-02-05,Family HOUSE,A,no
+1003,Medellin,El Poblado,Apartment,180000,1100,2,2,2025-02-20,Modern Loft,B,yes
+1004,Cali,San Fernando,Studio,90000,500,1,1,2025-03-12,budget studio ,C,no
+1005,Cali,Downtown,Apartment,130000,950,2,1,2025-03-25,Central Apartment,B,no
+1006,Bogota,Chapinero,Apartment,150000,980,2,2,2025-04-10,Bright apartment,A,yes
+1007,Medellin,Laureles,House,260000,1750,4,3,2025-04-22,Garden Home,A,no
+1008,Barranquilla,Alto Prado,Apartment,140000,1020,3,2,2025-05-18, Sea-view condo ,B,yes
+1009,Cali,North-End,House,210000,1500,3,2,2025-06-03,Spacious Family Home,C,no
+1010,Bogota,Usaquen,Apartment,195000,1200,3,2,2025-06-15,Work-From-Home Friendly,A,yes
