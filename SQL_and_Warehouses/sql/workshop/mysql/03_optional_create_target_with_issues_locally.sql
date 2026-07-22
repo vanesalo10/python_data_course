@@ -1,0 +1,27 @@
+USE retail_dw;
+
+DROP TABLE IF EXISTS workshop_orders_target;
+
+CREATE TABLE workshop_orders_target (
+    order_id INT PRIMARY KEY,
+    customer_id VARCHAR(20) NOT NULL,
+    order_date DATE NOT NULL,
+    order_status VARCHAR(30) NOT NULL,
+    gross_amount DECIMAL(10, 2) NOT NULL,
+    discount_amount DECIMAL(10, 2) NOT NULL,
+    net_amount DECIMAL(10, 2) NOT NULL,
+    updated_at DATETIME NOT NULL
+);
+
+INSERT INTO workshop_orders_target (
+    order_id, customer_id, order_date, order_status, gross_amount, discount_amount, net_amount, updated_at
+) VALUES
+    (1001, 'C001', '2026-05-01', 'complete', 120.00, 0.00, 120.00, '2026-05-01 09:00:00'),
+    (1002, 'C002', '2026-05-01', 'complete', 75.00, 5.00, 70.00, '2026-05-01 09:05:00'),
+    (1003, 'C003', '2026-05-02', 'refunded', 200.00, 15.00, 185.00, '2026-05-02 10:30:00'),
+    (1004, 'C004', '2026-05-02', 'complete', 45.00, 0.00, 45.00, '2026-05-02 10:10:00'),
+    (1005, 'C005', '2026-05-03', 'cancelled', 90.00, 90.00, 0.00, '2026-05-03 11:00:00'),
+    (1006, 'C001', '2026-05-03', 'complete', 130.00, 10.00, 120.00, '2026-05-03 11:15:00'),
+    (1008, 'C007', '2026-05-04', 'complete', 40.00, 0.00, 40.00, '2026-05-04 12:05:00'),
+    (1009, 'C009', '2026-05-04', 'complete', 30.00, 0.00, 30.00, '2026-05-04 12:30:00');
+

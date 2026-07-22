@@ -1,0 +1,8 @@
+pandas
+jupyter
+SQLAlchemy
+PyMySQL
+psycopg2-binary
+snowflake-connector-python[pandas]
+python-dotenv
+

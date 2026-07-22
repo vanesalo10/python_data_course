@@ -1,0 +1,37 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: phase3_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-retail_dw}
+      MYSQL_USER: ${MYSQL_USER:-student}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-student_password}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root_password}
+    ports:
+      - "3306:3306"
+    command:
+      - "--character-set-server=utf8mb4"
+      - "--collation-server=utf8mb4_unicode_ci"
+    volumes:
+      - phase3_mysql_data:/var/lib/mysql
+      - ../sql/mysql:/docker-entrypoint-initdb.d:ro
+
+  postgres:
+    image: postgres:16
+    container_name: phase3_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-retail_dw}
+      POSTGRES_USER: ${POSTGRES_USER:-student}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-student_password}
+    ports:
+      - "5432:5432"
+    volumes:
+      - phase3_postgres_data:/var/lib/postgresql/data
+      - ../sql/postgres:/docker-entrypoint-initdb.d:ro
+
+volumes:
+  phase3_mysql_data:
+  phase3_postgres_data:
+
